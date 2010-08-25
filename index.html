@@ -1,0 +1,54 @@
+---
+title: Spruce — a Ruby wrapper around the Forrst API
+layout: default
+---
+
+<div class="container_12">
+  <div class="grid_12">
+    <a href="http://github.com/c7/spruce"><img id="logotype" src="images/spruce.png"></a>
+  </div>
+  <!-- end .grid_12 -->
+  <div class="clear"></div>
+  <div class="grid_8 push_2">
+    <div class="section" id="about">
+      The <a href="http://forrst.com/apidocs.html">Forrst API</a> is currently a 
+      <em>moving target</em> and the plan is to develop Spruce alongside it, 
+      as close as possible.
+    </div>
+  </div>
+  <!-- end .grid_8 -->
+  <div class="clear"></div>
+  <div class="grid_8 push_2">
+    <div class="section" id="installation">
+      <h2>Installation</h2>
+      <code>
+        gem install spruce
+      </code>
+    </div>
+  </div>
+  <!-- end .grid_8 -->
+  <div class="clear"></div>
+  <div class="grid_8 push_2">
+    <div class="section" id="example_usage">
+      <h2>Example usage</h2>
+{% highlight ruby %}
+require 'rubygems'
+require 'spruce'
+
+# Retrieve a user by username
+kyle = Forrst::User.find_by_username 'kyle'
+  
+# Kyles latest PUBLIC posts
+kyle.posts
+
+# Retrieve a user by id
+peter = Forrst::User.find 5079
+
+# Public information about Peter
+peter.info
+{% endhighlight %}
+    </div>
+  </div>
+  <!-- end .grid_8 -->
+  <div class="clear"></div>
+<!-- end .container_12 -->
