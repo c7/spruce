@@ -14,6 +14,9 @@ The {YAJL C Bindings for Ruby}[http://github.com/brianmario/yajl-ruby] are so
 full of *AWESOME* that it is almost impossible to not use them everywhere JSON 
 is involved, so I didn’t.
 
+I’m also temporarily using the {Rest Client}[http://github.com/archiloque/rest-client]
+gem until the Forrst API returns the correct MIME type and status codes.
+
 == Getting started
 
     require 'rubygems'
@@ -21,11 +24,15 @@ is involved, so I didn’t.
     
     # Retrieve a user by username
     kyle = Forrst::User.find_by_username 'kyle'
-    kyle.posts # => Kyles latest PUBLIC posts
+      
+    # Kyles latest PUBLIC posts
+    kyle.posts
     
     # Retrieve a user by id
     peter = Forrst::User.find 5079
-    peter.info  # => Public information about Peter
+    
+    # Public information about Peter
+    peter.info  
     
 == Links
 
