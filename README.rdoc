@@ -1,24 +1,24 @@
-# Spruce ↟
+= Spruce ↟
 
-## Description
+== Description
 
-Spruce is a Ruby wrapper around the [Forrst API](http://forrst.com/apidocs.html). 
+Spruce is a Ruby wrapper around the {Forrst API}[http://forrst.com/apidocs.html]. 
 The Forrst API is currently a _moving target_ and the plan is to develop Spruce 
 alongside it, as close as possible.
 
 Spruce will support authentication via API tokens.
 
-## Installation
+== Installation
 
     gem install spruce
 
-## Dependencies
+== Dependencies
 
-The [YAJL C Bindings for Ruby](http://github.com/brianmario/yajl-ruby) are so 
+The {YAJL C Bindings for Ruby}[http://github.com/brianmario/yajl-ruby] are so 
 full of **AWESOME** that it is almost impossible to not use them everywhere JSON 
 is involved, so I didn’t.
 
-## Getting started
+== Getting started
 
     require 'rubygems'
     require 'spruce'
@@ -31,12 +31,12 @@ is involved, so I didn’t.
     peter = Forrst::User.find 5079
     peter.info  # => Public information about Peter
     
-## Links
+== Links
 
-  - [Forrst API](http://forrst.com/apidocs.html)
-  - [YAJL C Bindings for Ruby](http://github.com/brianmario/yajl-ruby)
+  * {Forrst API}[http://forrst.com/apidocs.html]
+  * {YAJL C Bindings for Ruby}[http://github.com/brianmario/yajl-ruby]
 
-## LICENCE
+== LICENCE
 
 Copyright (c) 2010 Peter Hellberg
 
