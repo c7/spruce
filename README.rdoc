@@ -29,8 +29,8 @@ is involved, so I didn’t.
     
 == Links
 
- * {Forrst API}[http://forrst.com/apidocs.html]
- * {YAJL C Bindings for Ruby}[http://github.com/brianmario/yajl-ruby]
+* {Forrst API}[http://forrst.com/apidocs.html]
+* {YAJL C Bindings for Ruby}[http://github.com/brianmario/yajl-ruby]
 
 == LICENCE
 
