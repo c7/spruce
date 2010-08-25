@@ -14,7 +14,7 @@ The {YAJL C Bindings for Ruby}[http://github.com/brianmario/yajl-ruby] are so
 full of *AWESOME* that it is almost impossible to not use them everywhere JSON 
 is involved, so I didn’t.
 
-I’m also temporarily using the {Rest Client}[http://github.com/archiloque/rest-client]
+I’m also temporarily using the {REST Client}[http://github.com/archiloque/rest-client]
 gem until the Forrst API returns the correct MIME type and status codes.
 
 == Getting started
