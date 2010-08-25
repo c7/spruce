@@ -3,10 +3,8 @@
 == Description
 
 Spruce is a Ruby wrapper around the {Forrst API}[http://forrst.com/apidocs.html]. 
-The Forrst API is currently a _moving target_ and the plan is to develop Spruce 
-alongside it, as close as possible.
-
-Spruce will support authentication via API tokens.
+The Forrst API is currently a <em>moving target</em> and the plan is to develop Spruce 
+alongside it, as close as possible. Spruce will support authentication via API tokens.
 
 == Installation
 
@@ -15,7 +13,7 @@ Spruce will support authentication via API tokens.
 == Dependencies
 
 The {YAJL C Bindings for Ruby}[http://github.com/brianmario/yajl-ruby] are so 
-full of **AWESOME** that it is almost impossible to not use them everywhere JSON 
+full of *AWESOME* that it is almost impossible to not use them everywhere JSON 
 is involved, so I didn’t.
 
 == Getting started
@@ -33,8 +31,8 @@ is involved, so I didn’t.
     
 == Links
 
-  * {Forrst API}[http://forrst.com/apidocs.html]
-  * {YAJL C Bindings for Ruby}[http://github.com/brianmario/yajl-ruby]
+ * {Forrst API}[http://forrst.com/apidocs.html]
+ * {YAJL C Bindings for Ruby}[http://github.com/brianmario/yajl-ruby]
 
 == LICENCE
 
