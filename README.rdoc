@@ -1,7 +1,5 @@
 = Spruce ↟
 
-== Description
-
 Spruce is a Ruby wrapper around the {Forrst API}[http://forrst.com/apidocs.html]. 
 The Forrst API is currently a <em>moving target</em> and the plan is to develop Spruce 
 alongside it, as close as possible. Spruce will support authentication via API tokens.
