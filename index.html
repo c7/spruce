@@ -33,19 +33,16 @@ layout: default
       <h2>Example usage</h2>
 {% highlight ruby %}
 require 'rubygems'
-require 'spruce'
+require 'forrst' # or require 'spruce'
 
 # Retrieve a user by username
-kyle = Forrst::User.find_by_username 'kyle'
+kyle = Forrst::User.find 'kyle'
   
 # Kyles latest PUBLIC posts
 kyle.posts
 
 # Retrieve a user by id
 peter = Forrst::User.find 5079
-
-# Public information about Peter
-peter.info
 {% endhighlight %}
     </div>
   </div>
