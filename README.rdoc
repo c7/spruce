@@ -28,6 +28,9 @@ gem until the Forrst API returns the correct MIME type and status codes.
     # Kyles latest PUBLIC posts
     kyle.posts
     
+    # Kyles PUBLIC posts before post_id 5000
+    kyle.posts_before(5000)
+    
     # Retrieve a user by id
     peter = Forrst::User.find 5079
     
