@@ -2,7 +2,7 @@ require 'forrst/list_of_posts'
 
 module Forrst
   class User
-    class Posts
+    class PublicPosts
       RESOURCE = "#{API_URI}#{API_VERSION}/users/posts"
       
       def latest

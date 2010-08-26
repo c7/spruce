@@ -2,7 +2,7 @@ require 'uri'
 require 'yajl'
 require 'rest_client'
 
-require 'forrst/user/posts'
+require 'forrst/user/public_posts'
 
 module Forrst
   class User
@@ -29,13 +29,13 @@ module Forrst
       end
     end
     
-    def posts
-      @posts ||= Posts.new(username)
+    def public_posts
+      @posts ||= PublicPosts.new(username)
       @posts.latest
     end
     
-    def posts_before(post_id)
-      @posts ||= User::Posts.new(username)
+    def public_posts_before(post_id)
+      @posts ||= PublicPosts.new(username)
       @posts.before(post_id)
     end
     
