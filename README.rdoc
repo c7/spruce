@@ -33,11 +33,15 @@ gem until the Forrst API returns the correct MIME type and status codes.
     
     # Retrieve a user by id
     peter = Forrst::User.find 5079
-    
+
 == Links
 
 * {Forrst API}[http://forrst.com/apidocs.html]
 * {YAJL C Bindings for Ruby}[http://github.com/brianmario/yajl-ruby]
+
+== TODO
+
+Implement the different post types by subclassing *Forrst::Post*
 
 == LICENCE
 
