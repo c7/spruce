@@ -1,6 +1,16 @@
 require 'rubygems'
 gem 'rdoc' # Required on Mac OS X to get a “working” rdoc version
 require 'rake/rdoctask'
+require 'rake/testtask'
+
+task :default => :test
+
+desc "Test spruce"
+Rake::TestTask.new(:test) do |t|
+  t.test_files = FileList['spec/*_spec.rb']
+  t.ruby_opts = ['-rubygems'] if defined? Gem
+  t.ruby_opts << '-I.'
+end
 
 desc 'Generate RDoc documentation for the spruce gem.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
@@ -10,10 +20,10 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
     exclude('lib/leaf/view_helpers/sinatra.rb').
     exclude('lib/leaf/core_ext.rb').
     exclude('lib/leaf/version.rb')
-  
+
   rdoc.main = "README.rdoc" # page to start on
   rdoc.title = "leaf documentation"
-  
+
   rdoc.rdoc_dir = 'doc' # rdoc output folder
   rdoc.options << '--inline-source' << '--charset=UTF-8' << '--format=darkfish'
   rdoc.options << '--main=README.rdoc'

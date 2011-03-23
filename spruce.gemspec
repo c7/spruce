@@ -15,14 +15,16 @@ Gem::Specification.new do |s|
   s.homepage    = "http://c7.github.com/spruce"
   s.authors     = ["Peter Hellberg"]
   s.licenses    = "MIT-LICENSE"
-  
+
   s.has_rdoc          = true
   s.rdoc_options      = ['--main', 'README.rdoc', '--charset=UTF-8']
   s.extra_rdoc_files  = ['README.rdoc', 'MIT-LICENSE']
-  
-  s.files             = Dir.glob("{lib}/**/*") + 
-                          %w(MIT-LICENSE Rakefile README.rdoc)
-  
+  s.require_path      = 'lib'
+
+  s.files             = Dir.glob("lib/**/*") +
+                        Dir.glob("spec/**/*") +
+                        %w(MIT-LICENSE Rakefile README.rdoc)
+
   s.rubyforge_project = "spruce"
   s.add_dependency('yajl-ruby', '>= 0.7.7')
   s.add_dependency('rest-client', '>= 1.6.0')

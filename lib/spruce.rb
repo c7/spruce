@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 # = Spruce - a Ruby wrapper around the Forrst API
 #
 # Happy Forrsting!

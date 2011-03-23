@@ -24,7 +24,7 @@ gem until the Forrst API returns the correct MIME type and status codes.
     
     # Retrieve a user by username
     kyle = Forrst::User.find 'kyle'
-      
+    
     # Kyles latest PUBLIC posts
     kyle.public_posts
     
