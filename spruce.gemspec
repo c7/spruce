@@ -28,4 +28,5 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "spruce"
   s.add_dependency('yajl-ruby', '>= 0.7.7')
   s.add_dependency('rest-client', '>= 1.6.0')
+  s.add_development_dependency('minitest')
 end
